@@ -1,0 +1,78 @@
+site_name: Knowlege Base
+# site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
+theme:
+  name: material
+  nav_style: dark
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.prefetch
+
+    # - toc.integrate
+    - toc.follow
+    
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: white
+      accent: blue grey 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: black
+      accent: light blue
+  font:
+    code: Monaco
+    text: Noto Sans
+  
+  favicon: favicons/monkey_business/favicon.ico
+  logo: favicons/monkey_business/android-chrome-512x512.png
+
+
+plugins:
+  - social
+  - search
+  - mkdocs-jupyter:
+      include_source: True
+
+markdown_extensions:
+  - tables 
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+      # toc_depth: 10
+  - toc:
+      permalink: true
+      title: Table of Contents
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra: 
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/agent-engineering
+
+extra_css:
+  - stylesheets/extra.css
