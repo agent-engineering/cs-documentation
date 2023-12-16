@@ -1,3 +1,5 @@
 notebook*
-*.ipynb
+# *.ipynb
 .cache*
+.DS_Store
+.ipynb_checkpoints*
